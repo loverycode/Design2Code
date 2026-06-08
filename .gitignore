@@ -1,0 +1,29 @@
+# Зависимости
+node_modules/
+/frontend/node_modules/
+/backend/node_modules/
+
+# Кэши
+.cache/
+*.pack
+*.pack.old
+
+# Системные файлы
+.DS_Store
+*.log
+
+# Среда
+.env
+.env.local
+
+# Сборки
+dist/
+build/
+
+# Покрытие тестов
+coverage/
+
+# Prisma бинарники
+*.dylib.node
+*.wasm
+/prisma/*.dylib.node
