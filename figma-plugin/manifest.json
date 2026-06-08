@@ -1,0 +1,13 @@
+{
+    "name": "Design2Code",
+    "id": "design2code-plugin",
+    "api": "1.0.0",
+    "main": "code.js",
+    "ui":"ui.html",
+    "editorType":["figma"],
+    "permissions": ["currentuser"],
+    "networkAccess": {
+     "allowedDomains": ["none"],
+    "devAllowedDomains": ["http://localhost:3001"]
+  }
+}

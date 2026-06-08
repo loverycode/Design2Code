@@ -1,0 +1,202 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Fugaz One", sans-serif;
+  --third-family: "Tomorrow", sans-serif;
+  --font3: "Helvetica Now Display", sans-serif;
+  --primary-pink: #fe53ae;
+  --primary-blue: #4ec0df;
+  --error-red: #dc2626;
+  --warning-orange: #f59e0b;
+  --success-green: #10b981;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --bg-light: #f9fafb;
+  --border-color: #e8e8e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background: #ffffff;
+  padding: 20px;
+  width: 100%;
+  min-width: 360px;
+}
+
+#checkBtn {
+  border-radius: 12px;
+  width: 100%;
+  height: 59px;
+  background:var(--primary-pink);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  margin-bottom: 8px;
+}
+
+#checkBtn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+#checkBtn:active {
+  transform: translateY(0);
+}
+
+#checkBtn h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.check-label {
+  font-family: var(--font-family);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.main-content {
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 16px;
+  margin: 20px 0;
+}
+
+.result_checking {
+  margin-bottom: 16px;
+}
+
+.result_checking h3 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+#results {
+  max-height: 250px;
+  overflow-y: auto;
+  margin: 12px 0;
+  padding-right: 8px;
+}
+
+#results::-webkit-scrollbar {
+  width: 4px;
+}
+
+#results::-webkit-scrollbar-track {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+#results::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 4px;
+}
+
+.error {
+  color: var(--error-red);
+  padding: 10px 12px;
+  margin: 8px 0;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.warning {
+  color: var(--warning-orange);
+  padding: 10px 12px;
+  margin: 8px 0;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.success {
+  color: var(--success-green);
+  padding: 12px;
+  border-radius: 8px;
+  margin: 12px 0;
+  font-size: 13px;
+  word-break: break-all;
+}
+
+.success a {
+  color: #106ce4;
+  text-decoration: underline;
+}
+
+.success a:hover {
+  color: #0d5cc4;
+}
+
+#exportBtn {
+  border-radius: 12px;
+  width: 100%;
+  height: 59px;
+  background: var(--primary-blue);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+#exportBtn:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+#exportBtn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+#exportBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#exportBtn h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+
+.rules {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #000000;
+  padding: 14px;
+  margin-top: 20px;
+  background: #ffffff;
+}
+
+/* Ссылка на проекты */
+.projects-link {
+  text-align: center;
+  margin: 16px 0;
+  padding: 12px;
+}
+
+.projects-link a {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-blue);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.projects-link a:hover {
+  color: var(--primary-pink);
+  text-decoration: underline;
+}
