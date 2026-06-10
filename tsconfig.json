@@ -11,6 +11,6 @@
     "forceConsistentCasingInFileNames": true,
     "types": ["jest", "node"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "routes"],
   "exclude": ["node_modules", "dist"]
 }

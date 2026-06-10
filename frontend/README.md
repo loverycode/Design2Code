@@ -5,5 +5,5 @@ docker-compose up -d
 #запуск бэка
 npm run dev
 
-#азпуск фронта
+#запуск фронта
 npm start
